@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flare_flutter/flare_actor.dart';
 
 class PrincipalView extends StatefulWidget {
   @override
@@ -14,16 +15,7 @@ class _PrincipalViewState extends State<PrincipalView> {
         centerTitle: true,
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            RaisedButton(
-              child: Text("Animação"),
-              onPressed: () {},
-            ),
-            SizedBox(height: 30),
-          ],
-        ),
+        child: FlareActor("assets/relogio_animado.flr", animation: "animacao01"), //O parâmetro animation é o nome que você deu na animação do Flare
       ),
     );
   }
