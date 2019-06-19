@@ -11,7 +11,7 @@ class _PrincipalViewState extends State<PrincipalView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("DOJO Navegação"),
+        title: Text("Animações Flare"),
         centerTitle: true,
       ),
       body: Center(
